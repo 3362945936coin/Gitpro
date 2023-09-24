@@ -11,7 +11,7 @@
                 "*.c", //当前文件夹所有c语言文件都可以编译//
                 "-o",
                 //"${fileDirname}\\${fileBasenameNoExtension}.exe"
-                "${fileDirname}\\d.exe",//文件名
+                "${fileDirname}\\a.exe",//文件名
             ],
             "options": {
                 "cwd": "${fileDirname}"
