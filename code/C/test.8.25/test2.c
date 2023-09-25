@@ -78,23 +78,55 @@
 // #
 
 
+// #include <stdio.h>
+// #include <string.h>
+// struct Book
+// {
+//     char name[41];
+//     short price;
+// };
+
+// int main ()
+// {
+// struct Book a1={"C语言程序设计",100};
+// strcpy(a1.name,"C++");
+// // struct Book *pb=&a1;
+// printf("书名:%s\n",a1.name);
+// printf(" 价格:%d\n",a1.price);
+// // a1.price=10000;
+// // printf("修改后的价钱%d\n",a1.price);·
+
+// return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int a =1;
+//     while(a<=100)
+//     {
+//         if(a==20)
+//         break;
+//         printf("%d\n",a);
+//         a++;
+//     }
+
+//     return 0;
+
+// }
+
 #include <stdio.h>
-#include <string.h>
-struct Book
-{
-    char name[41];
-    short price;
-};
 
 int main ()
 {
-struct Book a1={"C语言程序设计",100};
-strcpy(a1.name,"C++");
-// struct Book *pb=&a1;
-printf("书名:%s\n",a1.name);
-printf(" 价格:%d\n",a1.price);
-// a1.price=10000;
-// printf("修改后的价钱%d\n",a1.price);·
+    int ch =0;
+    //EOF是文件结束标志
+    while((ch =getchar()) !=EOF)
+    {
+        printf("%c\n",ch);
 
+    }
+   
 return 0;
 }
