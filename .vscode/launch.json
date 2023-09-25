@@ -8,8 +8,8 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-           // "program": "输入程序名称，例如 ${workspaceFolder}/a.exe",
-            "program": "${fileDirname}\\c.exe",//可执行程序名称
+            //"program": "输入程序名称，例如 ${workspaceFolder}/a.exe",
+            "program": "${fileDirname}\\c.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -17,7 +17,7 @@
             "externalConsole": false,
             "MIMode": "gdb",
             //"miDebuggerPath": "/path/to/gdb",
-            "miDebuggerPath": "D:\\迅雷下载\\mingw64\\bin\\gdb.exe", //gdb位置
+            "miDebuggerPath": "D:\\迅雷下载\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
