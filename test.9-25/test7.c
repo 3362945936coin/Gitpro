@@ -30,18 +30,26 @@
 //     return 0;
 // }
 
-#include <stdio.h>//小飞机for循环高级玩法！！！
+// #include <stdio.h>//小飞机for循环高级玩法！！！
 
+// int main ()
+// {
+//     for (int i=0;i<2;i++)
+//     printf("     **\n");
+//     for (int i=2;i>=2&&i<4;i++)
+//     printf("************\n");
+//     for (int i =4;i>=4&&i<6;i++)
+//     printf("    *  *\n");
+    
+    
+
+//     return 0;
+// }
+#include <stdio.h>
 int main ()
-{
-    for (int i=0;i<2;i++)
-    printf("     **\n");
-    for (int i=2;i>=2&&i<4;i++)
-    printf("************\n");
-    for (int i =4;i>=4&&i<6;i++)
-    printf("    *  *\n");
-    
-    
+{   
 
+    printf("eh");
     return 0;
+
 }
