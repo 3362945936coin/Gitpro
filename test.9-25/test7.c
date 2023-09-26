@@ -30,7 +30,7 @@
 //     return 0;
 // }
 
-#include <stdio.h>//小飞机for 循环、
+#include <stdio.h>//小飞机for循环高级玩法！！！
 
 int main ()
 {
