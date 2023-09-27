@@ -52,7 +52,7 @@ int main ()
   int i =1;
   while(i<=100)
   {
-    if (i==5)
+    if (i==50)
     break;
     printf("%d\n",i);
     i++;
