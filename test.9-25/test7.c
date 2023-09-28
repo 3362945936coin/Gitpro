@@ -47,18 +47,11 @@
 // }
 #include <stdio.h>
 int main ()
-{   
-  
-  int i =1;
-  while(i<=100)
-  {
-    if (i==50)
-    break;
-    printf("%d\n",i);
-    i++;
-  }
-
- 
-
-  return 0;
+{
+    int a,b,c,e,f,g;
+    
+    scanf("%d %d %d %d %d %d",&a,&b,&c,&e,&f,&g);
+    
+   printf("%d,%d,%d,%d,%d,%d\n%d   %d   %d   %d   %d   %d",a,b,c,e,f,g,a,b,c,e,f,g);
+return 0;
 }
