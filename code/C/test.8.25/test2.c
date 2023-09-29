@@ -121,12 +121,28 @@
 int main ()
 {
     int ch =0;
-    //EOF是文件结束标志
-    while((ch =getchar()) !=EOF)
+    int a;
+    char password[20]={0};
+    printf("请输入密码：");
+    scanf("%s",&password);
+    while((ch=getchar())!='\n')
     {
-        printf("%c\n",ch);
-
+        ;
     }
+    printf("请确认(Y/N)");
+    a =getchar();
+    if(a=='Y')
+    {
+        printf("确认成功\n");
+    }
+    else
+    {
+        printf("确认失败\n");
+    }
+    
+    
+
+    
    
 return 0;
 }
