@@ -93,15 +93,13 @@
 //     return 0;
 
 // }
+//计算机语言 计算剩下的钱取余%号！
 #include <stdio.h>
 int main()
-{
-   int n;
-   scanf("%d",&n);
-   printf("%d %d",(n*10)/3,(n*10)%3);
+{ 
 
 
-
+    printf("c");
     return 0;
 
 }
