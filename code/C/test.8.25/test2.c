@@ -125,10 +125,7 @@ int main ()
     char password[20]={0};
     printf("请输入密码：");
     scanf("%s",&password);
-    while((ch=getchar())!='\n')
-    {
-        ;
-    }
+   
     printf("请确认(Y/N)");
     a =getchar();
     if(a=='Y')
