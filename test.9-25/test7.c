@@ -94,12 +94,17 @@
 
 // }
 //计算机语言 计算剩下的钱取余%号！
+
 #include <stdio.h>
-int main()
-{ 
-
-
-    printf("c");
-    return 0;
-
+int main ()
+{
+  int i;
+int a;
+for(i=0;i<6;i++)
+{
+ for(a=0;a<=i;a++)
+printf("#");
+printf("\n");
+}
+return 0;
 }
