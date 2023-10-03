@@ -162,7 +162,7 @@ int main()
   arr2[right]=arr1[right];
   printf("%s\n",arr2);
   Sleep(1000);//停一秒
-  system("CLS");
+  
   left++;
   right--;
 
