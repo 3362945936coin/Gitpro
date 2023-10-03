@@ -95,16 +95,79 @@
 // }
 //计算机语言 计算剩下的钱取余%号！
 
+// #include <stdio.h>//阶乘@
+// int main ()
+// {
+  
+//   int n=0 ;
+//   int c=1;
+//   int sum ;
+//   for(n=1;n<=3;n++)
+//   {
+//     c=c*n;
+//     sum = c+sum;
+//   }
+//   printf("sum = %d\n",sum);
+// return 0;
+// }
+
+// #include <stdio.h>//新
+// int main()
+// {
+//    int arr[]={1,2,3,4,5,6,7,8,9,10};
+//    int k=17;
+//    int sz =sizeof(arr)/sizeof(arr[0]);//计算元素个数。
+//    int left =0;//左下标。
+//    int right = sz-1;//右下标。
+//    while(left<=right)
+//    {
+//     int mid =(left+right)/2;
+//      if(arr[mid]>k)
+//      {
+//       right =mid -1;
+//      }
+//      else if (arr[mid]<k)
+//      {
+//       left = mid+ 1;
+    
+//      }
+//     else 
+//     {
+//       printf("找到了,下标是%d\n",mid);
+//       break;
+//     }
+// if (left>right)
+// {
+//   printf("找不到\n");
+// }
+
+//    }
+
+//   return 0;
+// }
 #include <stdio.h>
-int main ()
+#include <string.h>
+#include <windows.h>
+#include<stdlib.h>
+int main()
 {
-  int i;
-int a;
-for(i=0;i<6;i++)
-{
- for(a=0;a<=i;a++)
-printf("#");
-printf("\n");
-}
-return 0;
+  char arr1[]="welcome to China!!!!!";
+  char arr2[]="*********************";
+  int left =0;
+  //int right =sizeof(arr1)/sizeof(arr1[0])-2;
+  int right =strlen(arr1)-1;
+  while (left<=right)
+  {
+  arr2[left]=arr1[left];
+  arr2[right]=arr1[right];
+  printf("%s\n",arr2);
+  Sleep(1000);//停一秒
+  system("CLS");
+  left++;
+  right--;
+
+  }
+   
+  return 0;
+
 }
