@@ -147,8 +147,8 @@
 // }
 #include <stdio.h>
 #include <string.h>
-#include <windows.h>
-#include<stdlib.h>
+#include <windows.h>//头文件sleep
+#include <stdlib.h>//system头文件
 int main()
 {
   char arr1[]="welcome to China!!!!!";
@@ -160,8 +160,9 @@ int main()
   {
   arr2[left]=arr1[left];
   arr2[right]=arr1[right];
+  
   printf("%s\n",arr2);
-  Sleep(1000);//停一秒
+  Sleep(1000);
   
   left++;
   right--;
