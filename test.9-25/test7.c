@@ -163,7 +163,7 @@ int main()
   
   printf("%s\n",arr2);
   Sleep(1000);
-  
+  '\tsystem("cls");',
   left++;
   right--;
 
