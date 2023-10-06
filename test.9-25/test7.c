@@ -148,7 +148,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <windows.h>//头文件sleep
-#include <stdlib.h>//system头文件
 int main()
 {
   char arr1[]="welcome to China!!!!!";
@@ -163,7 +162,7 @@ int main()
   
   printf("%s\n",arr2);
   Sleep(1000);
-  '\tsystem("cls");',
+  
   left++;
   right--;
 
