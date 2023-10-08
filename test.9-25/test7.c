@@ -100,14 +100,15 @@
 // {
   
 //   int n=0 ;
-//   int c=1;
-//   int sum ;
-//   for(n=1;n<=3;n++)
+//   int i=0;
+//   int Sn;
+//   scanf("%d",&n);
+//   for(i=1;i<=n&&n>=1&&n<=20;i++)
 //   {
-//     c=c*n;
-//     sum = c+sum;
+//    i=i*n;
+//    Sn=i+Sn;
 //   }
-//   printf("sum = %d\n",sum);
+//   printf("%d\n",Sn);
 // return 0;
 // }
 
@@ -145,29 +146,29 @@
 
 //   return 0;
 // }
-#include <stdio.h>
-#include <string.h>
-#include <windows.h>//头文件sleep
-int main()
-{
-  char arr1[]="welcome to China!!!!!";
-  char arr2[]="*********************";
-  int left =0;
-  //int right =sizeof(arr1)/sizeof(arr1[0])-2;
-  int right =strlen(arr1)-1;
-  while (left<=right)
-  {
-  arr2[left]=arr1[left];
-  arr2[right]=arr1[right];
+// #include <stdio.h>
+// #include <string.h>
+// // #include <windows.h>//头文件sleep
+// int main()
+// {
+//   char arr1[]="welcome to China!!!!!";
+//   char arr2[]="*********************";
+//   int left =0;
+//   //int right =sizeof(arr1)/sizeof(arr1[0])-2;
+//   int right =strlen(arr1)-1;
+//   while (left<=right)
+//   {
+//   arr2[left]=arr1[left];
+//   arr2[right]=arr1[right];
   
-  printf("%s\n",arr2);
-  Sleep(1000);
+//   printf("%s\n",arr2);
+//   Sleep(1000);
   
-  left++;
-  right--;
+//   left++;
+//   right--;
 
-  }
+//   }
    
-  return 0;
+//   return 0;
 
-}
+// }
