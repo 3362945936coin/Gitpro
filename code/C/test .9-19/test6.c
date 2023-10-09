@@ -1,5 +1,5 @@
 // 
-// #include<stdio.h>//写法二，
+// #include<stdio.h>//某年某月！
 // int main()
 // {
 // 	char s = 0;
