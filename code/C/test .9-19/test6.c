@@ -36,22 +36,51 @@
 // 	return 0;
 // }
  
- #include <stdio.h>//直角三角形判定
- int main ()
- {
- int a,b,c,d,e,f;
- scanf("%d,%d,%d",&a,&b,&c);
- if(a+b>c&&a+c>b&&b+c>a)//在三角形中，如果任意两边的平方和等于第三边平方和，那一定是∟三角形。即逆定理。并且满足任意两边之和，，，
-{
-  ;
-}
-if(a*a+b*b==c*c||a*a+c*c==b*b||b*b+c*c==a*a) 
-{
-  printf("%d,%d,%d:Y",a,b,c);
-}
-else
-{
-  printf("%d,%d,%d:N",a,b,c);
-}
-  return 0;
- }
+//  #include <stdio.h>//判断等腰三角形@
+//  int main ()
+//  {
+//  int a,b,c,d,e,f;
+//  scanf("%d,%d,%d",&a,&b,&c);
+//  if(a+b>c&&a+c>b&&b+c>a)//两边之和大于第三边
+// {
+//   ;
+// }
+// if(a==a||b==b||c==c)//任意两边相等！ 
+// {
+//   printf("%d,%d,%d:Y",a,b,c);
+// }
+// else
+// {
+//   printf("%d,%d,%d:N",a,b,c);
+// }
+//   return 0;
+//  }
+
+// #include <stdio.h>//时间格式转换！
+// int main()
+// {
+// int a,b,turn;
+// scanf("%d:%d",&a,&b);
+// if(a==0)//晚上零点转成12
+// {
+// turn=12;
+// printf("%d:%02d AM",turn,b);
+// }
+// else if(a>0&&a<=11)//早上输出
+// {
+//     turn=a;
+//     printf("%d:%02d AM",turn,b);
+// }
+// else if(a==12)//上下午分界点
+// {
+//     turn=a;
+//     printf("%d:%02d PM",turn,b);
+// }
+// else if(a>12&&a<=23)//下午转成0--12
+// {
+//     turn=a-12;
+//     printf("%d:%02d PM",turn,b);
+// }
+//     return 0;
+// }
+
