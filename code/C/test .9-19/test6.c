@@ -83,4 +83,10 @@
 // }
 //     return 0;
 // }
-
+#include <stdio.h>//优秀成绩标记。
+int main()
+{
+  char a;
+  scanf("%c\n%c\n%c\n%c",&a);
+    return 0;
+}
