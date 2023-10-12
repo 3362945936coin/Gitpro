@@ -83,10 +83,12 @@
 // }
 //     return 0;
 // }
-#include <stdio.h>//优秀成绩标记。
-int main()
-{
-  char a;
-  scanf("%c\n%c\n%c\n%c",&a);
-    return 0;
-}
+// #include <stdio.h>//字符处理，涉及数值范围。
+// int main()
+// {
+//   char a;
+//   scanf("%c\n%c\n%c\n%c",&a);
+//   if
+//     return 0;
+// }
+#include <stdio.h>

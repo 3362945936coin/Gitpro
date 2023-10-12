@@ -145,4 +145,19 @@
 // printf("%d",b);
 //   return 0;
 // }
+float sum (float x)
+{
+    float C;
+    C=(x-32)*5/9.0;
+    return C;
+}
+#include <stdio.h>
+int main()
+{
+ float F;
+ scanf("%f",&F);
+sum(F);
+printf("%.2f",sum(F));
+    return 0;
 
+}
