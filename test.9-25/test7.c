@@ -94,21 +94,26 @@
 
 // }
 //计算机语言 计算剩下的钱取余%号！
-
+// int  jc (int n)
+// {
+//     int i;
+//     int c=1;
+//     for(i=1;i<=n;i++)//用于求各个阶乘
+//     {
+//         c=c*i;
+//     }
+//   return c;//重复
+// }
 // #include <stdio.h>//阶乘@
 // int main ()
 // {
-  
-//   int n=0 ;
-//   int i=0;
-//   int Sn;
+//   int i;
+//   int n ;
 //   scanf("%d",&n);
-//   for(i=1;i<=n&&n>=1&&n<=20;i++)
+//   for(i=1;i<=n;i++)//循环打印N次
 //   {
-//    i=i*n;
-//    Sn=i+Sn;
-//   }
-//   printf("%d\n",Sn);
+//      printf("%d\n",jc(i));
+//   } 
 // return 0;
 // }
 
