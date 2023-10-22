@@ -188,16 +188,25 @@
 
 // int main()
 // {
-// int j=0;
+// int m=0;
 // int n=0;
+// int i;
 // int Sn=0;
-// scanf("%d",&n);
-// for (j=100;j<=n;j++)
+// scanf("%d %d",&m,&n);
+// if(m>n)
+// {
+//    int c=0;
+//    c=m;
+//    m=n;
+//    n=c;
+// }
+// for (i=m;i<=n;i++)//范围
 // {
     
-//     if(prame(j)==1)//是素数，就加入Sn
+//     if(prame(i)==1)//是素数，就加入Sn
 //    {
-//      Sn+=j;
+//      Sn+=i;
+ 
 //    }
 // }
 //   printf("%d\n",Sn);
@@ -391,32 +400,32 @@
    //     printf("%d",count);
    //    return 0;
    // }
-int Small(int x,int y)
-{
-   int r;
- while(x%y)
-   {
-      r=x%y;
-      x=y;
-      y=r;
-   }
-   return y;
-}
-#include <stdio.h>
-int main()
-{
-   int a,b,r,k,X;
-   scanf("%d,%d",&a,&b);
-     k=a*b;
-  if(a<0||b<0)
-  {
-   printf("Input error!\n");
-  }
-  else
-  {
-    X =Small(a,b);
-   printf("LCM=%d\n",k/X);
-  }
-   //a*b除他们的最大公约数即为最小公倍数
-   return 0;
-}
+// int Small(int x,int y)//最小公倍数
+// {
+//    int r;
+//  while(x%y)
+//    {
+//       r=x%y;
+//       x=y;
+//       y=r;
+//    }
+//    return y;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//    int a,b,r,k,X;
+//    scanf("%d,%d",&a,&b);
+//      k=a*b;
+//   if(a<0||b<0)
+//   {
+//    printf("Input error!\n");
+//   }
+//   else
+//   {
+//     X =Small(a,b);
+//    printf("LCM=%d\n",k/X);
+//   }
+//    //a*b除他们的最大公约数即为最小公倍数
+//    return 0;
+// }
