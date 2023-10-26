@@ -307,27 +307,28 @@
    如果x>y则将x与y的值进行交换， 然后再用x与z进行比较，如果
    x>z则将x与z的值进行交换，这样能使x最小。
 */
-// #include<stdio.h>
-// int main(){
-// 	int x, y, z, t;
-// 	scanf("%d%d%d",&x,&y,&z);
-// 	if(x>y){
-// 		t = x;
-// 		x = y;
-// 		y = t;
-// 	} 
-// 	if(x > z){
-// 		t = x;
-// 		x = z;
-// 		z = t;
-// 	}
-// 	if(y > z){
-// 		t = y;
-// 		y = z;
-// 		z = t;
-// 	}
-// 	printf("%d %d %d\n",x,y,z);
-// }
+#include<stdio.h>
+int main(){
+	int x, y, z, t;
+	scanf("%d%d%d",&x,&y,&z);
+	if(x>y){
+		t = x;
+		x = y;
+		y = t;
+	} 
+	if(x > z){
+		t = x;
+		x = z;
+		z = t;
+	}
+	if(y > z){
+		t = y;
+		y = z;
+		z = t;
+	}
+	printf("%d %d %d\n",x,y,z);
+   return 0;
+}
 // #include <stdio.h>
 // int main()
 // {
