@@ -157,29 +157,31 @@
 // }
 
 
-#include <stdio.h>
-int main()
-{
-int day=0;
-int i=0;
-int a,b;//分别代表上课时间和妈妈带补习班时间
-int answer;
-for(i=1;i<=7;i++)//循环输入七次
-{
-scanf("%d%d",&a,&b);
-if(a+b>8&&a+b>day)//代表最难受的一天
-{
-  day=a+b;
-  answer=i;
-}
-}
-if(day<8)
-{
-   printf("0");
-}
-else
-{
-printf("%d\n",answer);
-}
- return 0;
-}
+// #include <stdio.h>
+// int main()
+// {
+// int day=0;
+// int i=0;
+// int a,b;//分别代表上课时间和妈妈带补习班时间
+// int answer;
+// for(i=1;i<=7;i++)//循环输入七次
+// {
+// scanf("%d%d",&a,&b);
+// if(a+b>8&&a+b>day)//代表最难受的一天
+// {
+//   day=a+b;
+//   answer=i;
+// }
+// }
+// if(day<8)
+// {
+//    printf("0");
+// }
+// else
+// {
+// printf("%d\n",answer);
+// }
+//  return 0;
+// }
+
+

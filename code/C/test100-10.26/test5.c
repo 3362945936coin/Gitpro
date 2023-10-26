@@ -12,7 +12,7 @@ scanf("%d",&password);
 }
 else
 {
-  printf("别玩了!\n");
+  printf("滚!");
 }
 }
 

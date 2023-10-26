@@ -74,8 +74,8 @@ void  computermove(char arr[ROW][COL],int row,int col)
     printf("电脑走:>\n");
     while (1)
     {
-    x=rand()%row;
-    y=rand()%col;
+    x=rand()%row;//
+    y=rand()%col;//
     if(arr[x][y]==' ')
     {
         arr[x][y]='#';
@@ -128,13 +128,11 @@ char  whowin(char arr[ROW][COL],int row,int col)
     return arr [1][1];
     if(1==FULL(arr,ROW,COL))
     {
-        return 'Q';
+        return 'Q';//平局
     }
     else 
     {
-        return 'C';
-    }
-
-  
+        return 'C';//不分胜负@继续
+    }  
 }
 
