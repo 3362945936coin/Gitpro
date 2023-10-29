@@ -12,7 +12,7 @@ scanf("%d",&password);
 }
 else
 {
-  printf("滚!");
+  printf("滚!\n");
 }
 }
 
