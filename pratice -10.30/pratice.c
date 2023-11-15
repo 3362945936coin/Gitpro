@@ -38,7 +38,7 @@
 //     a=c;
 //     c=tem;
 //   }
-  
+
 //   if(b>c)
 //   {
 //     int tem=b;
@@ -46,12 +46,10 @@
 //     c=tem;
 //   }
 //    int r=a%c;
- 
+
 //   printf("%d/%d",a/gcd(a,c),c/gcd(a,c));
 //     return 0;
 // }
-
-
 
 // #include <stdio.h>//数直角三角形
 // int main()
@@ -70,7 +68,7 @@
 //    }
 //    printf("\n");
 //  }
- 
+
 //    return 0;
 
 // }
@@ -123,9 +121,6 @@
 //   return 0;
 // }
 
-
-
-
 // #include <stdio.h>
 // int main()
 // {
@@ -151,10 +146,9 @@
 //   }
 //   if(count>max)
 //     max=count;
-    
+
 // }
 // printf("%d",max);
-
 
 //   return 0;
 // }
@@ -176,7 +170,7 @@
 //   int i=0;int sum=0;
 //   int count=0;
 //   for(i=2;;i++)
-//   {  
+//   {
 //   if(prime(i))//为真
 //   {
 //     sum+=i;
@@ -191,7 +185,7 @@
 //     }
 
 //   }
-  
+
 //   }
 //      printf("%d",count);
 
@@ -216,38 +210,6 @@
 //     return 0;
 // }
 
-
-
-// #include <stdio.h>//小鱼真可爱！
-// int main()
-// {
-//   int n;
-//   scanf("%d\n",&n);
-//   int arr[n];
-//   int b[n];
-//   int i=0;
-//   int count=0;
-//   int j=0;
-//  for(i=1;i<=n;i++)//几次元素输入
-//  {
-//   scanf("%d ",&arr[i]);
-//    }
-// for(i=1;i<=n;i++)
-// {
-//   for(j=i;j>i;j--)
-//   {
-//   if(arr[i]<arr[i+1])
-//    b[i]++;
-//   }
-// }
-// for(i=1;i<=n;i++)
-// {
-// printf("%d",b[i]);
-// }
-//   return 0;
-// }
-
-
 // #include <stdio.h>//金币
 // int main()
 // {
@@ -266,10 +228,6 @@
 
 //     return 0;
 // }
-
-
-
-
 
 // int fib (int n)//P1720//栈溢出废了
 // {
@@ -295,7 +253,6 @@
 //     return 0;
 // }
 
-
 // #include <math.h>
 // int prime (int i)     //判断是否为素数的函数
 // {
@@ -306,129 +263,220 @@
 // 	return 1;
 // }
 
+// int my_strlen(char *str)
+// {
+//   char* start=str;
+//   char* end=str;
+//   while(*end !='\0')
+//   {
+//     end++;
+//   }
+// return end-start;
+// }
 
 // #include <stdio.h>
 // int main()
 // {
-//    int a,b;int d1,d2,d3,palindrome;
-// //    scanf("%d%d",&a,&b);
-//    int i=0;
-// // for(i=a;i<=b;i++)
-// // {
-// //    if(prime(i)==1)//是素数
-// //   printf("%d ",i);
-// //    else if()
-  
-// // }
-// for (d1 = 1; d1 <= 9; d1+=2) {    // 8位数的回文数
-//      for (d2 = 0; d2 <= 9; d2++) {
-//          for (d3 = 0; d3 <= 9; d3++) {
-//            for(d4=0;d4<=9;d4++){
-//             palindrome=10000000**d1+1000000*d2+100000*d3+10000*d4+1000*d4+100*d3+10*d2+d1;
-//            }
-//              printf("%d ",palindrome);
-//          }
-//      }
-//  }
-
-
-
-// for (d1 = 1; d1 <= 9; d1+=2) {    // 7位数的回文数
-//      for (d2 = 0; d2 <= 9; d2++) {
-//          for (d3 = 0; d3 <= 9; d3++) {
-//            for(d4=0;d4<=9;d4++){
-//             palindrome=1000000*d1+100000*d2+10000*d3+1000*d4+100*d3+10*d2+d1;
-//            }
-//              printf("%d ",palindrome);
-//          }
-//      }
-//  }
-
-
-
-
-
-// for (d1 = 1; d1 <= 9; d1+=2) {    // 6位数的回文数
-//      for (d2 = 0; d2 <= 9; d2++) {
-//          for (d3 = 0; d3 <= 9; d3++) {
-//            palindrome =100000*d1+ 10000*d2 + 1000*d3 +100*d3 + 10*d2 + d1;//(处理回文数...)
-//              printf("%d ",palindrome);
-//          }
-//      }
-//  }
-
-
-
-
-// for (d1 = 1; d1 <= 9; d1+=2) {    //5位数的回文数
-//      for (d2 = 0; d2 <= 9; d2++) {
-//          for (d3 = 0; d3 <= 9; d3++) {
-//            palindrome = 10000*d1 + 1000*d2 +100*d3 + 10*d2 + d1;//(处理回文数...)
-//              printf("%d ",palindrome);
-//          }
-//      }
-//  }
-
-// for (d1 = 1; d1 <= 9; d1+=2) {    // 4位数回文数
-//      for (d2 = 0; d2 <= 9; d2++) {
-        
-//            palindrome = 1000*d1+100*d2 + 10*d2 + d1;//(处理回文数...)
-//              printf("%d ",palindrome);
-         
-//      }
-//  }
-
-
-// for (d1 = 1; d1 <= 9; d1+=2) {    // 三位数的回文数
-//      for (d2 = 0; d2 <= 9; d2++){ 
-//          palindrome=100*d1+10*d2+d1;
-//          printf("%d ",palindrome);
-//      }
-//  }
-
-// for (d1 = 1; d1 <= 9; d1+=2) {    //2位数的回文数
-//            palindrome =10*d1 + d1;//(处理回文数...)
-//              printf("%d ",palindrome);
-//  }
-
-
-
-
-
-
-
-
-    // return 0;
+// char arr[]="bit";
+// int len =my_strlen(arr);
+// printf("%d",len);
+//     return 0;
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+
+// int arr[5];
+// int *vp;
+// for(vp=&arr[5];vp>&arr[0];)
+// {
+//     *--vp=0;
+// }
+// for(int i=0;i<5;i++)
+// {
+// printf("%d ",*vp);
+// }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+// int n;
+// scanf("%d\n",&n);
+//  int a[n];
+//  int i=0;int j=0;
+//  int t;
+//  for(i=0;i<n;i++)
+//  scanf("%d",&a[i]);
+
+// for(i=0;i<n-1;i++)//冒泡排序
+// {
+//     for(j=0;j<n-1-i;j++){
+//     if(a[j]>a[j+1])
+//     {
+//         t=a[j];
+//         a[j]=a[j+1];
+//         a[j+1]=t;
+//     }
+
+//     }
+// }
+// // for(i=0;i<n;i++)
+// // printf("%d ",a[i]);
+// printf("%d",a[n-1]-a[0]);
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// #include <string.h>
+// int main()
+// {
+//    char arr[21];
+//    int count=0;
+//    scanf("%s",&arr);
+//    int len=strlen(arr);
+// for(int i=0;i<len;i++)
+// {
+//     if(arr[i]>'0'&&arr[i<='9'])
+//     count++;
+//     else
+//     break;
+// }
+// if(count==11&&arr[0]=='1'&&len==11)
+// printf("yes");
+// else
+// printf("no");
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+// int n=1,t=1;
+// while(t<32000)
+// {
+// t=t*(++n);
+
+// }
+// t/=n;
+// n--;
+// printf("n=%d,t=%d",n,t);
+// return 0;
+// }
+
+//   #include <stdio.h>
+//   int main()
+//   {
+//     int n;int t=1;int i;
+//     int sum=0;
+//     for(i=1;;i++)
+//     {
+//         t=t*i;
+//         sum=t;
+//         ++n;
+       
+//         if(sum>32000)
+//         {
+//             printf("%d %d",n,sum);
+//             break;
+//         }
+//     }
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     int m,guess,i;
+//     int n,f=0;//
+//     scanf("%d%d",&m,&n);
+//     for(i=1;i<=n;i++)
+//     {
+//         scanf("%d",&guess);
+//         if(guess<0){
+//             break;}//负数结束
+//         if(guess>m)
+//             printf("Too big\n");
+//         if(guess>0&&guess<m)
+//             printf("Too small\n");
+//         if(guess==m)
+//         {
+//             f=1;//猜中数字f就为1
+//             if(i==1){
+//                 printf("Bingo!");
+//                 break;}
+//             else if(i==2||i==3){
+//                 printf("Lucky You!");
+//                 break;}
+//             else{
+//                 printf("Good Guess!");
+//                 break;}
+//         }
+//     }
+//     if(f == 0)
+//         printf("Game Over");
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//   int person;int sc[10000];double ave;
+//   scanf("%d",&person);
+//   for(int i=0;i<person;i++)
+//   {
+//    scanf("%d",&sc[i]);//分数
+//   }
+//   for(int i=0;i<person-1;i++)//冒泡排序
+//   {
+//     for(int j=0;j<person-1-i;j++)
+//     {
+//      if(sc[j]>sc[j+1])
+//      {
+//   int t=sc[j];
+//   sc[j]=sc[j+1];
+//   sc[j+1]=t;
+//      }  
+//     }
+//   }
+ 
+// double count=0;double sum=0;
+// for(int i=1;i<person-1;i++)
+// {
+//     sum=sum+sc[i];
+//    count++;
+// }
+// printf("%.2f",sum/count);
+//     return 0;
+// }
 
 #include <stdio.h>
 int main()
 {
-int n;
-scanf("%d\n",&n);
- int a[n];
- int i=0;int j=0;
- int t;
- for(i=0;i<n-1;i++)
- scanf("%d ",&a[i]);
+  int n;
+  int count=0;
+  scanf("%d",&n);
+  int arr[n];
+//   int arr2[n]={0};
+  for(int i=0;i<n;i++)//输入数组元素
+  {
+	scanf("%d",&arr[i]);
+  }
+ // 比较小鱼可爱程度
+  int j=0;
+  for(int i=0;i<n;i++)
+  {
+  for(j=i;j>=0;j--)//倒序依次查找
+  {
+	if(arr[j]<arr[i])//说明有
+	count++;
+  }
+  printf("%d ",count);
+  count =0;
+  }
 
-for(i=0;i<n-1;i++)//冒泡排序
-{
-    for(j=0;j<n-1-i;j++){
-    if(a[j]>a[j+1])
-    {
-        t=a[j];
-        a[j]=a[j+1];
-        a[j+1]=t;
-    }
-    
-    }
-}
-for(i=0;i<n;i++)
-printf("%d ",a[i]);
-// printf("%d",a[n-1]-a[0]);
-
-
-    return 0;
+	return 0;
 }
