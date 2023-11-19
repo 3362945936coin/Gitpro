@@ -453,30 +453,276 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-int main()
-{
-  int n;
-  int count=0;
-  scanf("%d",&n);
-  int arr[n];
-//   int arr2[n]={0};
-  for(int i=0;i<n;i++)//输入数组元素
-  {
-	scanf("%d",&arr[i]);
-  }
- // 比较小鱼可爱程度
-  int j=0;
-  for(int i=0;i<n;i++)
-  {
-  for(j=i;j>=0;j--)//倒序依次查找
-  {
-	if(arr[j]<arr[i])//说明有
-	count++;
-  }
-  printf("%d ",count);
-  count =0;
-  }
+// #include <stdio.h>
+// int main()
+// {
+//   int n;
+//   scanf("%d",&n);//定义循环行数
+//   int a[n][n];
+// for(int i=0;i<n;i++)//全部初始化成1
+// {
+//   for(int j=0;j<n;j++)
+//   a[i][j]=1;
+// }
 
-	return 0;
-}
+
+// for(int i=1;i<=n;i++)
+// {
+
+//   for(int j=1;j<i;j++)
+//   {
+//     a[i][j]=a[i-1][j]+a[i-1][j-1];//规律性
+//   }
+// }
+// for(int i=0;i<n;i++)
+// {
+//   for(int k=0;k<n-i;k++)
+//   printf(" ");
+//   for(int j=0;j<=i;j++)
+//   {
+//     printf("%d ",a[i][j]);
+//   }
+//   printf("\n");
+// }  
+
+
+
+//   return 0;
+// }
+
+// #include <stdio.h>//蛇形矩阵
+// int main()
+// {
+//   int n;int k=0;
+//   int a[100][100];
+// scanf("%d",&n);
+// int start =0; int end =n-1;
+// while(k<n*n)
+// {
+//  for(int i=start;i<=end;i++)//左到右
+//  a[start][i]=++k;
+//  for(int i=start+1;i<=end;i++)//从上到下
+//  a[i][end]=++k;
+//  for(int i=end-1;i>=start;i--)//从右到左
+//  a[end][i]=++k;
+//  for(int i=end -1;i>=start+1;i--)//从下到上
+//  a[i][start]=++k;
+// start++;end--;
+// }
+
+// for(int i=0;i<n;i++)
+// {
+//   for(int j=0;j<n;j++)
+//   {
+//     printf("%3d",a[i][j]);
+//   }
+//   printf("\n");
+// }
+
+//   return 0;
+// }
+
+// int main() {//蛇形矩阵
+//     int a[100][100];
+//     int x = 1, y = 0, k = 1;
+//     int n;
+//   scanf("%d",&n);
+//     while (k <= n * n) {
+//         ;
+//         while (y < n && !a[x][y + 1]) a[x][++y] = k++;
+//         while (x < n && !a[x + 1][y]) a[++x][y] = k++;
+//         while (y > 1 && !a[x][y - 1]) a[x][--y] = k++;
+//         while (x > 1 && !a[x - 1][y]) a[--x][y] = k++;
+        
+//     }
+//     for (int i = 1; i <= n; i++) {
+//         for (int j = 1; j <= n; j++) {
+//             printf("%5d", a[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
+// #include <math.h>
+// int prame (int n)
+// {
+  
+// if(n<2)
+// return 0;
+// for(int i=2;i<=sqrt(n);i++)
+// {
+//   if(n%i==0)
+//   return 0;
+// }
+// return 1;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+// int a[101];
+// int n;
+// scanf("%d",&n);
+// for(int i=0;i<n;i++)
+// {
+//   scanf("%d",&a[i]);
+// }
+//  prame(n);
+// for(int i=0;i<n;i++)
+// {
+//   if(prame(a[i])==1)
+//   printf("%d ",a[i]);
+// }
+
+//   return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//   for(int i=1;i<=9;i++)
+//   {
+//      for(int c=1;c<i;c++)
+//     {
+//       printf("       ");
+//     }
+//     for(int j=i;j<=9;j++)
+//     {
+//       printf("%d*%d=%2d ",i,j,i*j);
+//     }
+//     printf("\n");
+   
+//   }
+  
+//   return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+// int m,n;int sum=0;int count =0;
+// int i,j;int s=0;
+// scanf("%d%d",&m,&n);
+// for( i=m;i<=n;i++)
+// {
+//   sum=0;count=0;
+//  for( j=1;j<i;j++)
+//  {
+//   if(i%j==0)//是因子就存起来
+//   {
+//     sum=sum+j;
+//   }
+//  }
+
+// if(sum==i)
+// {
+//   printf("%d = ",i);
+// for(j=1;j<i;j++)
+// {
+//   s=0;
+//   if(i%j==0){
+//    count++;
+//   }
+// }
+// for(j=1;j<i;j++)
+// {
+ 
+//   if(i%j==0){
+//     s++;
+//     printf("%d",j);
+//     if(s<count){
+//    printf(" + ");
+//    }
+//    else
+//    printf("\n");
+ 
+//   }
+// }
+
+//    }
+    
+//   }
+ 
+
+//   return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//   // int n;
+//   // scanf("%d",&n);//定义循环行数
+//   int a[100][100];
+// for(int i=0;i<6;i++)//全部初始化成1
+// {
+//   for(int j=0;j<6;j++)
+//   a[i][j]=1;
+// }
+
+
+// for(int i=1;i<=6;i++)
+// {
+
+//   for(int j=1;j<i;j++)
+//   {
+//     a[i][j]=a[i-1][j]+a[i-1][j-1];//规律性
+//   }
+// }
+// for(int i=0;i<6;i++)
+// {
+//   for(int k=10-2*i;k>0;k--)
+//   printf(" ");
+//   for(int j=0;j<=i;j++)
+//   {
+//     printf("%4d",a[i][j]);
+//   }
+//   printf("\n");
+// }  
+
+
+
+//   return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//  int n;int c=0;int d=0;char zifu='A';
+//  scanf("%d",&n);
+//  c=((2*n-1)/2)+1;
+//  d=(2*n-1)-c;
+//  int i=0,j=0,k=0;
+//  for(i=0;i<c;i++)
+//  {
+//   for(k=0;k<c-1-i;k++)
+//   printf(" ");
+//   for(j=0;j<2*i+1;j++)
+//   {
+//     printf("%c",zifu);
+//   }
+//   zifu++;
+//   printf("\n");
+//  }
+//  zifu=zifu-2;
+// for(i=0;i<d;i++)
+//  {
+
+//   for(k=0;k<=i;k++){
+//   printf(" ");
+  
+//   }
+//   for(j=0;j<(d-i)*2-1;j++)
+//   {
+//     printf("%c",zifu);
+//   }
+//   zifu--;
+//   printf("\n");
+//  }
+
+//   return 0;
+// }
+
