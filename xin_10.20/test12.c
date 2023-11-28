@@ -186,3 +186,44 @@
 
 
 
+
+// struct stu
+// {
+// char name [20];
+// int score1;
+// int score2;
+// int score3;
+// }a[1001];
+
+// #include <stdio.h>
+
+// int main()
+// {
+
+//    int n;int ch;
+//    scanf("%d",&n);
+  
+//     for(int j=0;j<n;j++)
+//     {
+//         scanf("%s%d%d%d",&a[j].name,&a[j].score1,&a[j].score2,&a[j].score3);
+//         getchar();
+        
+//     }
+//     int max=0;int t=0;
+//    for(int j=0;j<n;j++)
+//    {
+//     ch=a[j].score1+a[j].score2+a[j].score3;
+//     if( max<ch){
+//     max=ch;
+//      ch=0;
+//      t =j;
+//     }
+//    }
+   
+
+//     printf("%s %d %d %d",a[t].name,a[t].score1,a[t].score2,a[t].score3);
+
+//     return 0;
+// }
+
+

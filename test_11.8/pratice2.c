@@ -347,37 +347,68 @@
 
 //     return 0;
 // }
-#include <stdio.h>//结构体
-typedef struct  stu
-{
-char name[20];
-short age ;
-char tele [12];
-char sex [5];
-} stu;
+// #include <stdio.h>//结构体
+//  struct  stu
+// {
+// char name[20];
+// int age ;
+// int NOIP;//成绩
+// } s1[10001];
 
-void print1 (stu t)
-{
+// int main()
+// {
+//    int n;
+//    scanf("%d",&n);
+//    for(int i=0;i<n;i++)
+//    {
+//     scanf("%s%d%d",&s1[i].name,&s1[i].age,&s1[i].NOIP);
+//     getchar();
+//    }
+   
+//    for(int j=0;j<n;j++)
+//    {
+//  s1[j].age++;s1[j].NOIP=s1[j].NOIP/5*6;
+//     if(s1[j].NOIP<=600){
+//     printf("%s %d %d\n",s1[j].name,s1[j].age,s1[j].NOIP);
+//     }
+//     else{
+//       s1[j].NOIP=600;
+//     printf("%s %d %d\n",s1[j].name,s1[j].age,s1[j].NOIP);
+//    }
+//    }
 
-printf("%s\n",t.name);
-printf("%d\n",t.age);
-printf("%s\n",t.tele);
-printf("%s\n",t.sex);
-}
+//   return 0;
+// }
 
- void print2 (stu*k)
-{
- printf("%s\n",k->name);
- printf("%d\n",k->age);
- printf("%s\n",k->tele);
- printf("%s\n",k->sex);
-}
 #include <stdio.h>
+struct  stu
+{
+char id[20];
+int s1;//学业成绩
+int s2;//成绩
+int sum1;//综合分数
+int sum2;
+} a[10001];
+
 int main()
 {
-  stu s={"狂飙",50,"1531861322","男"};
-print1(s);
-print2(&s);
+   int n;
+   scanf("%d",&n);
+   for(int i=0;i<n;i++)
+   {
+    scanf("%s%d%d",&a[i].id,&a[i].s1,&a[i].s2);
+    getchar();
+    a[i].sum1=a[i].s1*7+a[i].s2*3;
+   a[i].sum2=a[i].s1+a[i].s2;
+   }
 
-  return 0;
+for(int j=0;j<n;j++)
+{
+  if(a[j].sum1>=800 && a[j].sum2>140)
+  printf("Excellent\n");
+  else
+  printf("Not excellent\n");
+}
+
+return 0;
 }

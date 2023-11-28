@@ -108,155 +108,117 @@
 // printf("%d/%d+%d/%d=%d/%d",a,b,c,d,sum/k,s/k);
 //     return 0;
 // }
+// #include<math.h>
+// int prime(int n){
+//     for (int i=2;i<=(sqrt(n));i++)
+//         if (n%i==0) return 0;
+//         return 1;
+// }
+
+// #include<stdio.h>
+
+// int main()
+// {
+// 	int n,z,i,j,k;
+// 	scanf("%d",&n);
+// 	for( i=4;i<=n;i+=2)
+// 	{
+// 		for( j=2;j<=sqrt(i);j++)                   
+//          if (prime(j)&&prime(i-j))
+//         printf("%d= %d + %d\n",i,j,i-j);
+// 		}  
+		
+	
+// 	return 0;
+// } 
 
 
 
 // #include<stdio.h>
 // #include<math.h>
-// int main()
+// int zhishu(int n)//
 // {
-// 	int n,z,i,j,k;
+//     int i,b=0;
+//     for(i=2;i<=sqrt(n);i++)
+//      if(n%i==0)
+//      {
+//          b++;
+//          break;
+//      }
+//      return b;
+// }
+// int guess(int n)//
+// {
+//     int i;
+//     for(i=2;i<=n/2;i++)
+//       if(zhishu(i)==0)
+//       {
+//           if(zhishu(n-i)==0) return i;
+//       }
+//       return 0;
+// }
+//  int main()
+// {
+// 	int N,i;
+// 	scanf("%d",&N);
+// 	for(i=4;i<=N;i+=2)
+// 	 if(guess(i)!=0) printf("%d=%d+%d\n",i,guess(i),i-guess(i));
+// }
+
+// #include<stdio.h>
+// #include<math.h>
+// int main(void)
+// {
+// 	int n,z,i,j,k;int flag,p;int a=0;int b;
 // 	scanf("%d",&n);
-// 	//n=24;
-// 	for( i=2;i<=n;i++)
+	
+// 	for( i=4;i<=n;i+=2)
+// {
+// 	   for(a=2;a<=i/2;a++)
 // 	{
-// 		int flag=0,p=0;
-// 		for( j=2;j<=sqrt(i);j++)
-// 		{                       
-// 		    if(i%j==0)	
+// 		flag=0;
+// 		for( j=2;j<=a-1;j++)//  
+// 		{                       //
+// 		    if(a%j==0)	
 // 		    {flag=1;break;}
 // 		}  
 // 		if(flag==0)
 // 		{
-// 			z=n-i;
-// 			for(k=2;k<=sqrt(z);k++)
+// 			p=0;
+// 			b=i-a;
+// 			for(k=2;k<=b-1;k++)
 // 			{
-// 				if(z%k==0)
+// 				if(b%k==0)
 // 				{p=1;break;}
 // 			}
+// 			if(p==0){
+			
+//             printf("%d=%d+%d\n",i,a,b);
+//              break;
+// 			}
 // 		}
-// 		if(flag==0&&p==0&&i<z)
-//         printf(" %d + %d\n",i,z);
-// 	}
 	
+// 	}
+//  }
 // 	return 0;
 // } 
-
-// #include <stdio.h>
-// int main()
+// int check_sys()
 // {
-//  int n;int a,b;int sum1=0;int sum2=0;
-//  //a为1  b为2;
-//  //初始高度
-//  int min=1;
-//  scanf("%d\n%d%d",&n,&a,&b);
-//  for(int i=1;i<=a;i++)
-//  {
-// 	sum1=i;
-//  }
-//  while(b)
-//  {
-//   sum2=sum2+2;//总长度
-//    b--;
-//  }
-//  if(sum1<sum2)
-// {
-// 	min=n-1;
-	
-// }
-// else if(sum1=sum2)
-// {
-	
-// 	min=min+1;;
-// }
-// else
-// {
-// 	min=n-2;
-// }
-// printf("%d",min);
-//  return 0;
-// }
-
-
-// #include <stdio.h>
-// int main()
-// {
-//   int x1,y1,x2,y2;
-//   int b,n;
-//   scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
-//   scanf("%d",&n);
-//   while(n)
-//   {
-// 	scanf("%d",&b);
-// 	n--;
-// 	switch(b)
-// 	 {
-//   	 case 1:
-//   	 y1++;
-//   	 break;
-//   	 case 2:
-//   	 y1--;
-//   	 break;
-//   	 case 3:
-//    	x1--;
-//   	 break;
-//   	 case 4:
-//    	x1++;
-// 	break;
-
-//  	}
-//   }
-//  if(x1==x2&&y1==y2)
-//  printf("Yes");
-// else
-// printf("No");
-// 	return 0;
+//     int a=1;
+//     return*(char*)&a;
 // }
 
 // #include <stdio.h>
 // int main()
 // {
-//   int weight =0;int f=0;
-//   scanf("%d",&weight);
-// for(int i=2;i<=weight;i+=2)
+// int ret=check_sys();
+// if(ret==1)
 // {
-   
-//    for(int j=2;j<=weight;j+=2)
-//    {
-// 	if(i+j==weight)
-// 	f=1;
-//    }
+//     printf("小端");
 // }
-// if(f==1)
-// printf("YES, you can divide the watermelon into two even parts.");
 // else
 // {
-// 	printf("NO, you can't divide the watermelon into two even parts.");
+//     printf("大端");
 // }
 // 	return 0;
 // }
-
-
-
-#include<stdio.h>
- 
-int main()
-{
-    int a,b,c,d;
-    int w1,d1,w2,d2;
-    scanf("%d%d%d%d",&a,&b,&c,&d);
-    scanf("%d%d%d%d",&w1,&d1,&w2,&d2);
-     
-    int ans=(w2-w1-1)*4;
-    for(int i=d1; i<=7; i++)
-    {
-        if(i==a||i==b||i==c||i==d) ans++;
-    }
-    for(int i=1 ; i<=d2; i++)
-    {
-        if(i==a||i==b||i==c||i==d) ans++;
-    }
-     
-    printf("%d",ans);
-    return 0;
-}
