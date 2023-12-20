@@ -187,43 +187,220 @@
 
 
 
-struct stu
-{
-char name [20];
-int score1;
-int score2;
-int score3;
-}a[1001];
+// struct stu
+// {
+// char name [20];
+// int score1;
+// int score2;
+// int score3;
+// }a[1001];
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
+// int main()
+// {
 
-   int n;int ch;
-   scanf("%d",&n);
+//    int n;int ch;
+//    scanf("%d",&n);
   
-    for(int j=0;j<n;j++)
-    {
-        scanf("%s%d%d%d",&a[j].name,&a[j].score1,&a[j].score2,&a[j].score3);
-        getchar();
+//     for(int j=0;j<n;j++)
+//     {
+//         scanf("%s%d%d%d",&a[j].name,&a[j].score1,&a[j].score2,&a[j].score3);
+//         getchar();
         
-    }
-    int max=0;int t=0;
-   for(int j=0;j<n;j++)
-   {
-    ch=a[j].score1+a[j].score2+a[j].score3;
-    if( max<ch){
-    max=ch;
-     ch=0;
-     t =j;
-    }
-   }
+//     }
+//     int max=0;int t=0;
+//    for(int j=0;j<n;j++)
+//    {
+//     ch=a[j].score1+a[j].score2+a[j].score3;
+//     if( max<ch){
+//     max=ch;
+//      ch=0;
+//      t =j;
+//     }
+//    }
    
 
-    printf("%s %d %d %d",a[t].name,a[t].score1,a[t].score2,a[t].score3);
+//     printf("%s %d %d %d",a[t].name,a[t].score1,a[t].score2,a[t].score3);
 
-    return 0;
-}
+//     return 0;
+// }
+
+// void print2(int(*p)[5],int x,int y)
+// {
+//     int i=0;
+//     for(i=0;i<x;i++)
+//     {
+//         int j=0;
+//         for(j=0;j<y;j++)
+//         {
+//             printf("%d",*(*(p+i)+j));
+//         }
+//         printf("\n");
+//     }
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+ 
+//   int a[3][5]={{1,2,3,4,5},{2,3,4,5,6},{3,4,5,6,7}};
+//   print2(a,3,5);
 
 
+//     return 0;
+// }
+
+// void print (char*str)
+// {
+//     printf("%s\n",str);
+// }
+
+
+// #include <stdio.h>
+// int main()
+// {
+
+//     void (*p)(char*)=print;
+//     (*p)("CS GO!");//*为函数地址，后面为传参类型
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// int add (int x,int y)
+// {
+//     return x+y;
+// }
+
+
+// void cell (int(*pf)(int x,int y))
+// {
+//     int x,y;
+//     scanf("%d%d",&x,&y);
+//     printf("%d",pf(x,y));
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int x,y;
+//     int n;
+//     do
+//   {  scanf("%d",&n);
+    
+// switch(n)
+// {
+// case 1:
+// cell(add);
+// break;
+// case 0:
+// break;
+
+
+// }
+// }while(n);
+//     return 0;
+// }
+// #include <stdio.h>
+// #include <string.h>
+// #include <math.h>
+
+// int main()
+// {
+//    int m,n;int c,d;
+//    int cnt =0;
+//    char a[81];
+//    char b[81];
+//    gets(a);
+//    gets(b);
+//    m = strlen(a);
+//    n = strlen(b);
+//    if(m>n){
+// 	for(int i = 0; i < m; i++)
+// 	{
+// 		 if(a[i] == b[i])
+// 		 {
+// 			cnt++;
+// 		 }
+// 		 else
+// 		 {
+// 			printf("%d",abs(a[i]-b[i]));
+// 			break;
+// 		 }
+// 	}
+//    }
+//    if(m<n)
+//    {
+// 			for(int i = 0; i < n; i++)
+// 	{
+// 		 if(a[i] == b[i])
+// 		 {
+// 			cnt++;
+// 		 }
+// 		 else
+// 		 {
+// 			printf("%d",abs(a[i]-b[i]));
+// 			break;
+// 		 }
+// 	}
+
+//    }
+//    if(n==m)
+//     printf("0");
+      
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// int main()
+// {
+// int n,m;int a[101];int i;
+// while(scanf("%d%d",&n,&m)!=EOF)
+// {
+// 	if(n==0 &&n==0)
+// 	break;
+// for( i =0 ; i<n ; i++)
+// {
+// 	scanf("%d",&a[i]);
+// }
+// for( i =n-1; i>=0 ;i--)
+// {
+// 	if(a[i]>m)
+// 	a[i+1]=a[i];
+// 	else
+// 	break;
+// }
+// a[i+1]=m;
+// for(int i =0 ;i < n+1; i++)
+// {
+// printf("%d",a[i]);
+// if(i<n)
+// printf(" ");
+// }
+// printf("\n");
+// }
+// 	return 0; 
+// }
+
+	#include <stdio.h>
+	int main()
+	{
+
+   int n ,k,a,b;
+   scanf("%d%d%d%d",&n,&k,&a,&b);
+   int t1 =0;
+   int t2= 0;
+    t1=(n-1)*a;//步行
+    t2= (k-1)*b+(n-1)*b;
+   if(t1==t2)
+   printf("0");
+   if(t1>t2)
+   printf("1");
+   if(t1<t2)
+   printf("2");
+
+		return 0;
+
+	}

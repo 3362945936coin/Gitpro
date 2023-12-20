@@ -152,7 +152,7 @@
 //   return 0;
 // }
 // #include <stdio.h>
-// #include <string.h>
+// #include <string.h>z
 // // #include <windows.h>//头文件sleep
 // int main()
 // {
@@ -177,3 +177,20 @@
 //   return 0;
 
 // }
+
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+
+
+    char a[21];
+    gets(a);
+  int n=  strlen(a);
+  for(int i=n-1 ;i>=0 ;i--)
+  {
+   printf("%c",a[i]);
+  }
+    return 0;
+}

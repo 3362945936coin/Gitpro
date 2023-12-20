@@ -302,28 +302,28 @@
 //     return 0;
 // }
 
-// #include <string.h>
-// #include <stdio.h>
-// void reverse_string(char*arr)
-// {
-//  char tem=arr[0];
-//  int len =strlen(arr);
-//  arr[0]=arr[len-1];
-//  arr[len-1]='\0';
-//  if(strlen(arr+1)>=2)
-//   reverse_string(arr+1);
-//  arr[len-1]=tem;
-// }
+#include <string.h>
+#include <stdio.h>
+void reverse_string(char*arr)
+{
+ char tem=arr[0];
+ int len =strlen(arr);
+ arr[0]=arr[len-1];
+ arr[len-1]='\0';
+ if(strlen(arr+1)>=2)
+  reverse_string(arr+1);
+ arr[len-1]=tem;
+}
 
-// #include <stdio.h>//逆序字符串
-// int main()
-// {
-// char arr[]="abcdefg";
-// reverse_string(arr);
-// printf("%s",arr);
+#include <stdio.h>//逆序字符串
+int main()
+{
+char arr[]="abcdefg";
+reverse_string(arr);
+printf("%s",arr);
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 // #include <math.h>
