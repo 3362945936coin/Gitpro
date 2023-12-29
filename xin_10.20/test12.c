@@ -384,23 +384,50 @@
 // 	return 0; 
 // }
 
-	#include <stdio.h>
-	int main()
-	{
 
-   int n ,k,a,b;
-   scanf("%d%d%d%d",&n,&k,&a,&b);
-   int t1 =0;
-   int t2= 0;
-    t1=(n-1)*a;//步行
-    t2= (k-1)*b+(n-1)*b;
-   if(t1==t2)
-   printf("0");
-   if(t1>t2)
-   printf("1");
-   if(t1<t2)
-   printf("2");
-
-		return 0;
-
-	}
+#include <stdio.h>//简单的报警器。
+#include <time.h>
+#include <windows.h>
+int main(void)
+{
+    int hour = 0, min = 0, sec = 0;
+    // time()函数返回值的数据类型是time_t。传递给time()函数的参数是指向time_t数据类型的指针。
+    time_t time_sec = 0;//相当于time_t*time_sec指针类型。
+    time_t old_sec = 0;
+    printf("请设置计时时间——时 分 秒\n");
+    scanf("%d%d%d", &hour, &min, &sec);
+    //time函数、返回类型就是time_t,time_t是无符号的long整形。
+    //time函数读秒作用
+    time(&time_sec);              //获取当前秒数（2023 12-28 00:00:00到现在）
+    printf("倒计时——%02d:%02d:%02d\r", hour, min, sec);
+    old_sec = time_sec;           //更新旧的秒数
+    while(hour > 0 || min > 0 || sec > 0)
+    {
+        time(&time_sec);          //获取秒数保存到time_t变量
+        if(time_sec != old_sec)   //如果秒数改变（计时达到1秒）
+        {
+            old_sec = time_sec;   //更新旧的秒数
+            if(sec > 0)
+                sec--;            //计时秒数减1
+            else
+            {
+                sec = 59;         //如果原秒数为0，则变为59
+                if(min > 0)
+                    min--;        //计时分钟减1
+                else
+                {
+                    min = 59;     //如果分钟数为0，则变为59
+                    hour--;       //计时小时数减1
+                }
+            }
+            printf("倒计时——%02d:%02d:%02d\r", hour, min, sec);
+        }
+    }
+    for(int i = 0; i < 5; i++)
+    {
+        printf("\a");             //响蜂鸣器（或系统提示音）
+        Sleep(1);                 //延时1秒，太短电脑不发出声音
+    }
+    puts("\n计时结束\n");
+    return 0;
+}

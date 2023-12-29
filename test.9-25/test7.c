@@ -151,46 +151,47 @@
 
 //   return 0;
 // }
-// #include <stdio.h>
-// #include <string.h>z
-// // #include <windows.h>//头文件sleep
-// int main()
-// {
-//   char arr1[]="welcome to China!!!!!";
-//   char arr2[]="*********************";
-//   int left =0;
-//   //int right =sizeof(arr1)/sizeof(arr1[0])-2;
-//   int right =strlen(arr1)-1;
-//   while (left<=right)
-//   {
-//   arr2[left]=arr1[left];
-//   arr2[right]=arr1[right];
-  
-//   printf("%s\n",arr2);
-//   Sleep(1000);
-  
-//   left++;
-//   right--;
-
-//   }
-   
-//   return 0;
-
-// }
-
-
 #include <stdio.h>
 #include <string.h>
+#include <windows.h>//头文件sleep
 int main()
 {
-
-
-    char a[21];
-    gets(a);
-  int n=  strlen(a);
-  for(int i=n-1 ;i>=0 ;i--)
+  char arr1[]="welcome to China!!!!!";
+  char arr2[]="*********************";
+  int left =0;
+  //int right =sizeof(arr1)/sizeof(arr1[0])-2;
+  int right =strlen(arr1)-1;
+  while (left<=right)
   {
-   printf("%c",a[i]);
+  arr2[left]=arr1[left];
+  arr2[right]=arr1[right];
+  
+  printf("%s\n",arr2);
+  Sleep(1000);
+  
+  left++;
+  right--;
+
   }
-    return 0;
+   
+  return 0;
+
 }
+
+
+// #include <stdio.h>
+// #include <string.h>
+// int main()
+// {
+
+
+//     char a[21];
+//     gets(a);
+//   int n=  strlen(a);
+//   for(int i=n-1 ;i>=0 ;i--)
+//   {
+//    printf("%c",a[i]);
+//   }
+//     return 0;
+// }
+				

@@ -503,4 +503,202 @@ int main()
 }
 
 
- 
+// #include <stdio.h>
+// int main()
+// {
+//    int a[11];int t ;int i ,j ;
+//    for(int i = 0 ; i< 10 ; i++)
+//    {
+//     scanf("%d",&a[i]);
+//    }
+//   for(i=0;i<5-1;i++)//低到高
+//   {
+//       for(j=0;j<5-1-i;j++)
+//       {
+//           if(a[j] > a[j+1])
+//           {
+//               t = a[j];
+//               a[j] = a[j+1];
+//               a[j+1] = t;
+//           }
+//       }
+//   }
+//     for(i=5;i<10-1;i++)//高到低
+//      { 
+//         for(j=5;j<10-1-i+5;j++)//
+//         {
+//           if(a[j] < a[j+1])
+//           {
+//               t = a[j];
+//               a[j] = a[j+1];
+//               a[j+1] = t;
+//           }
+//          }
+//      }    
+// for(int i =0 ; i< 10 ;i++)
+// {
+//     printf("%4d",a[i]);
+// }
+// return 0 ;
+
+
+
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+// int cmp_int(const void*e1,const void*e2)//低到高
+// {
+//     //比较两个整形的数
+//     return *(int*)e1-*(int*)e2;
+// }
+// int cmp_int2(const void*e1,const void*e2)//高到低
+// {
+//     //比较两个整形的数
+//     return *(int*)e2-*(int*)e1;
+// }
+
+//     void test1()
+// {
+//      int a[5] ;
+//      int b[5] ;
+//      for(int i= 0; i <5;i++)
+//      {
+//         scanf("%d",&a[i]);
+//      }
+//      for(int i= 0; i <5;i++)
+//      {
+//         scanf("%d",&b[i]);
+//      }
+//     int sz = sizeof(b) / sizeof(b[0]);
+//      int sv = sizeof(a) / sizeof(a[0]);
+//     qsort(a,sv,sizeof(a[0]),cmp_int);
+//     qsort(b,sz,sizeof(b[0]),cmp_int2);
+//      for(int i=0;i<sv;i++)
+//     {
+//     printf("%4d",a[i]);
+//     }
+//     for(int i=0;i<sz;i++)
+//     {
+//     printf("%4d",b[i]);
+//     }
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+// int main()
+// {
+//     test1();
+//     // test2();
+//     //  test3();
+//     return 0;
+// }
+
+
+// struct stu
+// {
+//     char ID[11];
+// char name [20];
+// int score1;
+// int score2;
+// int score3;
+// }a[1001];
+
+// #include <stdio.h>
+// #include  <string.h>
+// int main()
+// {
+
+//    int ch;
+   
+  
+//     for(int j=0;j<5;j++)
+//     {
+//         scanf("%s%s%d%d%d",&a[j].ID,&a[j].name,&a[j].score1,&a[j].score2,&a[j].score3);
+//         getchar();
+        
+//     }
+//     int max=0;int t;
+//    for(int j=0;j<5;j++)
+//    {
+//     ch=a[j].score1+a[j].score2+a[j].score3;
+//     if( max<ch){
+//     max=ch;
+//      ch=0;
+//      t =j;
+//     }
+//    }
+//  strcpy (a[t].name,"xueba");
+//      ch=a[t].score1+a[t].score2+a[t].score3;
+
+//     printf("%s %s %d %d %d %d",a[t].ID,a[t].name,a[t].score1,a[t].score2,a[t].score3,ch);
+
+//     return 0;
+// }
+// int cnt =0;
+// int fib (int n)
+// {
+//     cnt++;
+//   if(n<=2)
+//   return 1;
+//   else 
+//  return fib(n-1)+fib(n-2);
+
+
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int n ;
+//    scanf("%d",&n);
+// int result = 0;
+// result =fib(n);
+// printf("%d",cnt);
+
+     
+//      return 0;
+// }
+
+
+
+// #include <stdio.h>
+// #include <string.h>
+//   char arr[100];
+// int main()
+// {
+//     int n ; int cnt =0;int ret =0;
+//     scanf("%d",&n);
+//     getchar();
+//     // char arr[100];
+//     gets(arr);
+//     int sz = strlen(arr);
+//     cnt=0;ret=0;
+//     if(sz<=n){
+//    for(int i = 0; arr[i]!='\0'; i++)
+//    {
+        
+//          if(arr[i]==' '){
+//             ret++;
+         
+//          }
+         
+//    }
+//     }
+    
+// printf("%d %d",sz,sz-ret);//字符串结尾处
+
+
+
+//     return 0 ;
+// }
+
+
+// #include <stdio.h>
+// int main()
+// {
+// printf("BDBCA\n");
+//     return 0 ;
+// }

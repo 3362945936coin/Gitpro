@@ -77,65 +77,55 @@
 // }
     // return 0;
 // }
-
+// #include <stdio.h>
 // #include <stdlib.h>
 // #include <string.h>
-// int cmp_int(const void*e1,const void*e2)
+// int cmp_int(const void*e1,const void*e2)//低到高
+// {
+//     //比较两个整形的数
+//     return *(int*)e1-*(int*)e2;
+// }
+// int cmp_int2(const void*e1,const void*e2)//高到低
 // {
 //     //比较两个整形的数
 //     return *(int*)e2-*(int*)e1;
 // }
-// int cmp_float(const void*e1,const void*e2)
-// {
-//     //比较两个浮点数的数
-//     return (int)(*(float*)e1-*(float*)e2);
-// }
-// int cmp_char(const void*e1,const void*e2)
-// {
-//     //比较两个浮点数的数
-//     return 
-// }
+
 //     void test1()
 // {
-//      int arr[10] = {9,8,7,6,5,4,3,2,1,0};
-//     int sz = sizeof(arr) / sizeof(arr[0]);
-//     qsort(arr,sz,sizeof(arr[0]),cmp_int);
+//      int a[5] ;
+//      int b[5] ;
+//      for(int i= 0; i <5;i++)
+//      {
+//         scanf("%d",&a[i]);
+//      }
+//      for(int i= 0; i <5;i++)
+//      {
+//         scanf("%d",&b[i]);
+//      }
+//     int sz = sizeof(b) / sizeof(b[0]);
+//      int sv = sizeof(a) / sizeof(a[0]);
+//     qsort(a,sv,sizeof(a[0]),cmp_int);
+//     qsort(b,sz,sizeof(b[0]),cmp_int2);
+//      for(int i=0;i<sv;i++)
+//     {
+//     printf("%4d",a[i]);
+//     }
 //     for(int i=0;i<sz;i++)
 //     {
-//     printf("%d ",arr[i]);
+//     printf("%4d",b[i]);
 //     }
 // }
 
-//     void test2()
-// {
-//     float arr[] = {9.0,8.0,7.0,6.0,5.0,4.0,3.0};
-//     int sz=sizeof(arr) / sizeof(arr[0]);
-//     qsort(arr,sz,sizeof(arr[0]),cmp_float);
-//     for(int i=0;i<sz;i++)
-//  {
-//     printf("%f ",arr[i]);
-//  }
-// }
-//    void test3()
-//    {
-//     char a[2]={"hellof","ai"};
-//     int sz=strlen(a);
-//     qsort(a,sz,sizeof(a[0]),cmp_char);
-//      for(int i=0;i<sz;i++)
-//  {
-//     printf("%s ",arr[i]);
-//  }
-
-//    }
 // #include <stdio.h>
 // #include <stdlib.h>
 // #include <string.h>
 // int main()
 // {
 //     test1();
-//     test2();
-//      test3();
-    // return 0;
+//     // test2();
+//     //  test3();
+//     return 0;
 // }
 
 
@@ -238,30 +228,30 @@
 // }
 
 
-#include <string.h>
-#include <stdio.h>
-void reverse_string(char*arr)
-{
- char tem=arr[0];
- int len =strlen(arr);
- arr[0]=arr[len-1];
- arr[len-1]='\0';
- if(strlen(arr+1)>=2)
-  reverse_string(arr+1);
- arr[len-1]=tem;
-}
+// #include <string.h>
+// #include <stdio.h>
+// void reverse_string(char*arr)
+// {
+//  char tem=arr[0];
+//  int len =strlen(arr);
+//  arr[0]=arr[len-1];
+//  arr[len-1]='\0';
+//  if(strlen(arr+1)>=2)
+//   reverse_string(arr+1);
+//  arr[len-1]=tem;
+// }
 
 
-int main()
-{
-    char arr[20];
-    for(int i=0;i<1;i++)
-    scanf("%s",&arr[i]);
-    reverse_string(arr);
-    printf("%s",arr);
+// int main()
+// {
+//     char arr[20];
+//     for(int i=0;i<1;i++)
+//     scanf("%s",&arr[i]);
+//     reverse_string(arr);
+//     printf("%s",arr);
 
-    return 0;
-}
+//     return 0;
+// }
 // int run (int year)//闰年的一个判断
 // {
 // 	return (year%400==0||(year%4==0&&year%100!=0));
